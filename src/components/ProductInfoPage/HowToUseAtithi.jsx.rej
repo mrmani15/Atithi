@@ -1,0 +1,7 @@
+diff a/src/components/ProductInfoPage/HowToUseAtithi.jsx b/src/components/ProductInfoPage/HowToUseAtithi.jsx	(rejected hunks)
+@@ -9 +9,4 @@ export default function HowToUseAtithi() {
+-        <p id="how-atithi-works" style={{ fontSize: "40px", fontFamily: "herculanum" }}>
++        <p
++          id="how-atithi-works"
++          style={{ fontSize: "40px", fontFamily: "herculanum" }}
++        >

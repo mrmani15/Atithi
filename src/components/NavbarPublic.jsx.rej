@@ -1,0 +1,94 @@
+diff a/src/components/NavbarPublic.jsx b/src/components/NavbarPublic.jsx	(rejected hunks)
+@@ -69,9 +69,15 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-              <div
+-                className="collapse navbar-collapse text-right"
+-                id="navbarSupportedContent"
+-              >
+-                <ul className="navbar-nav ml-auto ">
+-                  <li
+-                    className="nav-item active"
+-                    data-toggle="collapse"
+-                    data-target=".navbar-collapse.show"
++            <div
++              className="collapse navbar-collapse text-right"
++              id="navbarSupportedContent"
++            >
++              <ul className="navbar-nav ml-auto ">
++                <li
++                  className="nav-item active"
++                  data-toggle="collapse"
++                  data-target=".navbar-collapse.show"
++                >
++                  <Link
++                    to="/main_checkin_checkout"
++                    type="button"
++                    className="btn btn-outline-primary mx-3 my-1"
++                    style={{ fontSize: "16px", fontFamily: "herculanum" }}
+@@ -79,7 +85 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-                    <Link
+-                      to="/main_checkin_checkout"
+-                      type="button"
+-                      className="btn btn-outline-primary mx-3 my-1"
+-                      style={{ fontSize: "16px", fontFamily: "herculanum" }}
+-                    >
+-                      Main page
++                    Main page
+@@ -87,5 +87,11 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-                  </li>
+-                  <li
+-                    className="nav-item"
+-                    data-toggle="collapse"
+-                    data-target=".navbar-collapse.show"
++                </li>
++                <li
++                  className="nav-item"
++                  data-toggle="collapse"
++                  data-target=".navbar-collapse.show"
++                >
++                  <Link
++                    to="/admin_dashboard"
++                    type="button"
++                    className="btn btn-outline-primary mx-3 my-1"
++                    style={{ fontSize: "16px", fontFamily: "herculanum" }}
+@@ -93,7 +99 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-                    <Link
+-                      to="/admin_dashboard"
+-                      type="button"
+-                      className="btn btn-outline-primary mx-3 my-1"
+-                      style={{ fontSize: "16px", fontFamily: "herculanum" }}
+-                    >
+-                      Admin Dashboard
++                    Admin Dashboard
+@@ -101,5 +101,10 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-                  </li>
+-                  <li
+-                    className="nav-item"
+-                    data-toggle="collapse"
+-                    data-target=".navbar-collapse.show"
++                </li>
++                <li
++                  className="nav-item"
++                  data-toggle="collapse"
++                  data-target=".navbar-collapse.show"
++                >
++                  <button
++                    className="btn btn-outline-primary mx-3 my-1"
++                    style={{ fontSize: "16px", fontFamily: "herculanum" }}
++                    onClick={logoutUser}
+@@ -107,6 +112 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-                    <button
+-                      className="btn btn-outline-primary mx-3 my-1"
+-                      style={{ fontSize: "16px", fontFamily: "herculanum" }}
+-                      onClick={logoutUser}
+-                    >
+-                      Logout
++                    Logout
+@@ -114,4 +114,4 @@ const NavBar = ({ isAuth, logoutUser }) => {
+-                  </li>
+-                </ul>
+-              </div>
+-            )}
++                </li>
++              </ul>
++            </div>
++          )}

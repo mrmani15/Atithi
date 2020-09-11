@@ -1,0 +1,30 @@
+diff a/src/components/Login.jsx b/src/components/Login.jsx	(rejected hunks)
+@@ -101,14 +101,14 @@ class Login extends Component {
+-                <button
+-                  className="btn btn-primary col-12 col-md-12 mb-3"
+-                  type="button"
+-                  disabled
+-                >
+-                  <span
+-                    class="spinner-border"
+-                    role="status"
+-                    aria-hidden="true"
+-                    style={{ width: "1.5rem", height: "1.5rem" }}
+-                  ></span>
+-                  <span class="sr-only">Loading...</span>
+-                </button>
+-              )}
++              <button
++                className="btn btn-primary col-12 col-md-12 mb-3"
++                type="button"
++                disabled
++              >
++                <span
++                  class="spinner-border"
++                  role="status"
++                  aria-hidden="true"
++                  style={{ width: "1.5rem", height: "1.5rem" }}
++                ></span>
++                <span class="sr-only">Loading...</span>
++              </button>
++            )}

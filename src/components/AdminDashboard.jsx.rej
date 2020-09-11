@@ -1,0 +1,14 @@
+diff a/src/components/AdminDashboard.jsx b/src/components/AdminDashboard.jsx	(rejected hunks)
+@@ -63 +63 @@ class AdminDashboard extends Component {
+-        -1 ||
++          -1 ||
+@@ -172,2 +172,2 @@ class AdminDashboard extends Component {
+-                            "en-US"
+-                          )}
++                              "en-US"
++                            )}
+@@ -191,2 +191,2 @@ class AdminDashboard extends Component {
+-        <ShowLoading label={"Loading Admin Dashboard.."} />
+-      );
++      <ShowLoading label={"Loading Admin Dashboard.."} />
++    );

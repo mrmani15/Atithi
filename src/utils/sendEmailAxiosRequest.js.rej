@@ -1,0 +1,8 @@
+diff a/src/utils/sendEmailAxiosRequest.js b/src/utils/sendEmailAxiosRequest.js	(rejected hunks)
+@@ -3,5 +3 @@ import axios from "axios";
+-export function sendVisitIdToVisitor(
+-  email,
+-  visitorName,
+-  visitID
+-) {
++export function sendVisitIdToVisitor(email, visitorName, visitID) {
