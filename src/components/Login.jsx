@@ -104,12 +104,12 @@ class Login extends Component {
                 disabled
               >
                 <span
-                  className="spinner-border"
+                  class="spinner-border"
                   role="status"
                   aria-hidden="true"
                   style={{ width: "1.5rem", height: "1.5rem" }}
-                />
-                <span className="sr-only">Loading...</span>
+                ></span>
+                <span class="sr-only">Loading...</span>
               </button>
             )}
           </div>

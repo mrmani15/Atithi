@@ -57,7 +57,7 @@ class AdminDashboard extends Component {
     const { pageSize, currentPage, searchQuery } = this.state;
     console.log(data);
     console.log(`searchQuery`, searchQuery);
-    const filteredData = data.filter(
+    let filteredData = data.filter(
       item =>
         item.visitorName.toLowerCase().indexOf(searchQuery.toLowerCase()) !==
           -1 ||
@@ -188,7 +188,7 @@ class AdminDashboard extends Component {
         </div>
       </div>
     ) : (
-      <ShowLoading label="Loading Admin Dashboard.." />
+      <ShowLoading label={"Loading Admin Dashboard.."} />
     );
   }
 }

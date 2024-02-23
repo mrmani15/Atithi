@@ -1,4 +1,0 @@
-diff a/src/components/ProductInfoPage/ProductInfoJumbotron.jsx b/src/components/ProductInfoPage/ProductInfoJumbotron.jsx	(rejected hunks)
-@@ -50 +50 @@ export default function ProductInfoJumbotron() {
--                </button>
-+                  </button>

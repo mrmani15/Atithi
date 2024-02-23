@@ -3,11 +3,11 @@ import React from "react";
 const ShowLoading = ({ label }) => {
   return (
     <>
-      <div className="text-center mt-5" style={{ fontFamily: "Tomorrow" }}>
+      <div class="text-center mt-5" style={{ fontFamily: "Tomorrow" }}>
         <h3>{label}</h3>
         <br />
-        <div className="spinner-border" role="status">
-          <span className="sr-only">Loading...</span>
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
     </>

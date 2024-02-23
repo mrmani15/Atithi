@@ -95,7 +95,7 @@ export const addVisitor = (payload, history) => {
         }
         snapshot.forEach(doc => {
           console.log(doc.id, "=>", doc.data());
-          // const userDataFromDB = doc.data();
+          const userDataFromDB = doc.data();
           alert(
             `Visitor already exists. Please verify your email to continue.`
           );
@@ -268,30 +268,29 @@ export const checkForExistingVisitor = (email, history) => {
     if (email.trim() === "") {
       dispatch(checkForExistingVisitorFailure());
       return alert("Email fields cannot be left empty");
-    } else {
-      fBaseVisitorRegister
-        .where("visitorEmail", "==", email)
-        .limit(1)
-        .get()
-        .then(snapshot => {
-          if (snapshot.empty) {
-            console.log(snapshot.empty);
-            history.push("/email_verification");
-            alert("Please enter correct email id..!!");
-            dispatch(checkForExistingVisitorFailure());
-          }
-          snapshot.forEach(doc => {
-            console.log(doc.id, "=>", doc.data());
-            const userDataFromDB = doc.data();
-            dispatch(checkForExistingVisitorSuccess(userDataFromDB));
-            history.push("/user_visit_details_updated");
-          });
-        })
-        .catch(() => {
-          history.push("/email_verification");
-          dispatch(checkForExistingVisitorFailure());
-        });
     }
+    fBaseVisitorRegister
+      .where("visitorEmail", "==", email)
+      .limit(1)
+      .get()
+      .then(snapshot => {
+        if (snapshot.empty) {
+          console.log(snapshot.empty);
+          history.push("/email_verification");
+          alert("Please enter correct email id..!!");
+          dispatch(checkForExistingVisitorFailure());
+        }
+        snapshot.forEach(doc => {
+          console.log(doc.id, "=>", doc.data());
+          const userDataFromDB = doc.data();
+          dispatch(checkForExistingVisitorSuccess(userDataFromDB));
+          history.push("/user_visit_details_updated");
+        });
+      })
+      .catch(() => {
+        history.push("/email_verification");
+        dispatch(checkForExistingVisitorFailure());
+      });
   };
 };
 

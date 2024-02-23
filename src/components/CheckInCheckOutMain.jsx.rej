@@ -1,4 +1,0 @@
-diff a/src/components/CheckInCheckOutMain.jsx b/src/components/CheckInCheckOutMain.jsx	(rejected hunks)
-@@ -23 +23 @@ class CheckInCheckOutMain extends Component {
--    console.log(visitDetails)
-+    console.log(visitDetails);

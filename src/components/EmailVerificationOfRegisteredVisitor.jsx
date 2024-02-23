@@ -31,8 +31,9 @@ class EmailVerificationOfRegisteredVisitor extends Component {
     const { email } = this.state;
     if (email.trim() === "") {
       return alert("Email field cannot be left empty");
+    } else {
+      checkForExistingVisitor(email, history);
     }
-    checkForExistingVisitor(email, history);
   };
 
   render() {
@@ -42,7 +43,7 @@ class EmailVerificationOfRegisteredVisitor extends Component {
       return <Redirect to={{ pathname: "/login" }} />;
     }
     return isCheckExistingVisitorLoading ? (
-      <ShowLoading label="Verifying email.." />
+      <ShowLoading label={"Verifying email.."} />
     ) : (
       <>
         <form className="col-8 col-md-4 col-sm-6 m-auto">

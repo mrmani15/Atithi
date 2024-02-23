@@ -28,123 +28,123 @@ const Routes = props => {
     <>
       {/* <Switch> */}
       <RouteController
-        routeType="public"
+        routeType={"public"}
         isAuth={isAuth}
         component={NavBarPublic}
-        path="/"
+        path={"/"}
       />
       <RouteController
-        routeType="public"
+        routeType={"public"}
         isAuth={isAuth}
         component={Home}
-        path="/"
+        path={"/"}
         exact
       />
       <RouteController
-        routeType="auth"
+        routeType={"auth"}
         isAuth={isAuth}
         component={Login}
-        path="/login"
+        path={"/login"}
         history={history}
         exact
       />
       <RouteController
-        routeType="auth"
+        routeType={"auth"}
         isAuth={isAuth}
         component={Register}
-        path="/register"
+        path={"/register"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={VisitorRegistration}
-        path="/visitor_registration"
+        path={"/visitor_registration"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={CheckInCheckOutMain}
-        path="/main_checkin_checkout"
+        path={"/main_checkin_checkout"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={CheckOutToken}
-        path="/checkout"
+        path={"/checkout"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={About}
-        path="/about"
+        path={"/about"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={Contact}
-        path="/contact"
+        path={"/contact"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={UserVisitDetails}
-        path="/user_visit_details"
+        path={"/user_visit_details"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={FirstTimeOrRegisteredBeforeCheck}
-        path="/first_time_or_registered_before"
+        path={"/first_time_or_registered_before"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={EmailVerificationOfRegisteredVisitor}
-        path="/email_verification"
+        path={"/email_verification"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={CheckinSuccess}
-        path="/checkin_success"
+        path={"/checkin_success"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={UserVisitDetailsUpdated}
-        path="/user_visit_details_updated"
+        path={"/user_visit_details_updated"}
         history={history}
         exact
       />
       <RouteController
-        routeType="protected"
+        routeType={"protected"}
         isAuth={isAuth}
         component={AdminDashboard}
-        path="/admin_dashboard"
+        path={"/admin_dashboard"}
         history={history}
         exact
       />
-      <RouteController routeType="nomatch" component={NoMatch} path="*" />
+      <RouteController routeType={"nomatch"} component={NoMatch} path={"*"} />
       {/* <Route path="/login" render={() => <Login history={history} />} />
         <Route path="/register" render={() => <Register history={history} />} /> */}
       {/* <Route path="*" render={() => <NoMatch />} /> */}

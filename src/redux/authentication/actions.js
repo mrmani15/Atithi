@@ -12,12 +12,6 @@ import {
 import axios from "../../utils/axiosInterceptor";
 import firebase from "../../config/fbaseConfig";
 
-const setAuthorizationHeader = token => {
-  const FBIdToken = `Bearer ${token}`;
-  localStorage.setItem("FBIdToken", FBIdToken);
-  axios.defaults.headers.common.Authorization = FBIdToken;
-};
-
 export const loginUserRequest = () => ({
   type: LOGIN_USER_REQUEST
 });
@@ -89,7 +83,6 @@ export const companyRegister = payload => dispatch => {
     .then(authData => {
       dispatch(companyRegisterSuccess(payload));
       payload.history.push("/login");
-      console.log(authData);
       return alert(`
           Successfully registered..!!
           Please login to continue.
@@ -136,4 +129,10 @@ export const logoutUser = () => {
     //   })
     //   .catch(err => dispatch(logoutUserFailure(err.message)));
   };
+};
+
+const setAuthorizationHeader = token => {
+  const FBIdToken = `Bearer ${token}`;
+  localStorage.setItem("FBIdToken", FBIdToken);
+  axios.defaults.headers.common.Authorization = FBIdToken;
 };
